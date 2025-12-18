@@ -10,10 +10,13 @@
 
 
     .content-div{
+      
 
     
       h2{
         margin-bottom: 8px;
+        font-size: 16px;
+        color: rgb(12, 12, 12);
       }
 
       button{
@@ -21,12 +24,31 @@
         color: white;
         cursor: pointer;
         transition: 1s;
+        margin-bottom: 5px;
+        outline: none;
 
       }
 
       button:hover{
         background-color: black;
+        outline: none;
+      }
+
+      .output{
+
+        background-color: rgba(255, 249, 249, 0.918);
+        width: 53%;
+        height: 60px;
+        text-align: center;
+        
+      overflow: auto;
+      padding: 10px 0;
+      margin-top: 8px;
+      border-radius: 10px;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;;
+      box-sizing: border-box;
       }
     }
   }
 }
+

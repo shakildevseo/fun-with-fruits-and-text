@@ -1,7 +1,17 @@
+
+
 *{
   margin: 0;
   padding: 0;
+}  
+
+body{
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+
 
 
 .container{
@@ -15,4 +25,56 @@ button, input{
   margin: 0 5px;
   border-radius: 10px;
 }
+
+.animated-box {
+  position: relative;
+  padding: 18px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #fff3e0;
+  border-radius: 14px;
+  color: #000;
+  overflow: hidden;
+}
+
+/* moving border */
+.animated-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 3px;
+  border-radius: 14px;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    lime,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 300% 300%;
+  animation: borderMove 3s linear infinite;
+
+  /* mask trick */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+
+
 
