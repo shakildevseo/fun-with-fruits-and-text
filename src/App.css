@@ -1,0 +1,32 @@
+.fun-with-text{
+  padding: 30px;
+}
+
+.fun-with-text{
+
+
+  .container{
+
+
+
+    .content-div{
+
+    
+      h2{
+        margin-bottom: 8px;
+      }
+
+      button{
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        transition: 1s;
+
+      }
+
+      button:hover{
+        background-color: black;
+      }
+    }
+  }
+}
